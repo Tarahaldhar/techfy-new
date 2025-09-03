@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="Website Design Templates">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="Web Design Agency HTML Template">
+    <meta name="description" content="Flyweb - Web Design Agency HTML Template">
+
+    <!-- title  -->
+    <title>Techyfe - Web Design Agency</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="css/plugins.css">
+
+    <!-- search css -->
+    <link rel="stylesheet" href="search/search.css">
+
+    <!-- quform css -->
+    <link rel="stylesheet" href="quform/css/base.css">
+
+    <!-- scroll -->
+    <link rel="stylesheet" href="css/scrollbar.css">
+
+    <!-- template core css -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- PAGE LOADING
+    ================================================== -->
+    <div id="preloader"></div>
+
+    <!-- MAIN WRAPPER
+    ================================================== -->
+    <div class="main-wrapper">
+
+<!-- Ganesh Chaturthi Offer Marquee -->
+<div class="offer-marquee" role="region" aria-label="Ganesh Chaturthi Offer" aria-live="polite">
+  <div class="marquee" tabindex="0">
+    🌸 Techyfe की ओर से आपको गणेश चतुर्थी की हार्दिक शुभकामनाएँ 🙏 • सभी वेब डिज़ाइन और डिजिटल सेवाओं पर पाएं 30% की छूट 🎉 
+  </div>
+</div>
+
+<!-- Ganesh Chaturthi Popup -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+
+    <!-- Circle Discount -->
+    <div class="discount-circle">30% OFF</div>
+
+    <h4>🙏 गणेश चतुर्थी की शुभकामनाएँ 🙏</h4>
+    <p>🌸 Techyfe की ओर से आपको हार्दिक शुभकामनाएँ!</p>
+    <p>इस शुभ अवसर पर सभी वेब डिज़ाइन और डिजिटल सेवाओं पर पाएं <strong>30% छूट</strong>।</p>
+  </div>
+</div>
+
+<style>
+/* Marquee */
+.offer-marquee {
+  width: 100%;
+  background: #0d6efd;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 46px;
+  padding: 0 12px;
+  font-family: "Noto Sans Devanagari", Arial, sans-serif;
+  font-weight: 500;
+  z-index: 1050;
+}
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-left 16s linear infinite;
+  font-size: 15px;
+}
+@keyframes marquee-left {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none; /* Default hidden */
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.popup-content {
+  background: #fff;
+  color: #333;
+  padding: 60px 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: zoomIn 0.4s ease;
+  position: relative;
+}
+.popup-content h4 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: red;
+}
+@keyframes zoomIn {
+  from {transform: scale(0.7); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+/* Discount Circle */
+.discount-circle {
+  width: 120px;
+  height: 120px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+</style>
+
+<script>
+// Run when DOM is ready
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("popup").style.display = "flex";
+});
+
+// Close popup
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+
+
+
+
+
+
+
+        <!-- HEADER
+        ================================================== -->
+        <header class="header-style3">
+
+            <div class="navbar-default border-bottom border-color-light-white">
+
+                <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-12">
+                            <div class="menu_area alt-font">
+                                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                                    <div class="navbar-header navbar-header-custom">
+                                        <!-- start logo -->
+                                        <a href="index-2.html" class="navbar-brand"><img id="logo" src="img/logos/logo.png" alt="logo" /></a>
+                                        <!-- end logo -->
+                                    </div>
+
+                                    <div class="navbar-toggler bg-primary"></div>
+
+                                    <!-- start menu area -->
+                                    <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="./about.html">About Us</a></li>
+                                        <li><a href="./services.html">Services</a></li>
+                                        <li><a href="./portfolio.html">Portfolio</a></li>
+                                        <li><a href="./contact.html">Contact</a></li>
+                                        <li style="margin-top: 15px;"><a href="https://calendly.com/info-techyfe/30min?month=2025-08" class="btn-style1 white-hover small"><span>For Free Consultation</span></a></li>
+                                    </ul>
+                                    <!-- end menu area -->
+
+                                    <!-- start attribute navigation -->
+                                    <!-- end attribute navigation -->
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- BANNER
+        ================================================== -->
+        <section class="full-screen top-position1 p-0">
+            <div class="slider-fade3 owl-carousel owl-theme w-100 min-vh-100">
+                <div class="item bg-img cover-background left-overlay-secondary" data-overlay-dark="7" data-background="img/banner/slide-06.jpg">
+                    <div class="container d-flex flex-column">
+                        <div class="row align-items-center min-vh-100 pt-6 pt-md-0">
+                            <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6 mb-1-9 mb-lg-0 pt-6 pb-12 py-sm-6">
+                                <span class="text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block text-primary small-title bg-white w-50 px-2">Crafting Digital Experiences</span>
+                                <h1 class="text-black mb-2-2 display-3 font-weight-800 title lh-1 bg-white p-2 w-100">Elevate your brand with our <span class="text-primary">agency.</span></h1>
+                                <a href="https://wa.me/919718820229" target="_blank" class="btn-style1 rounded me-2 my-1 my-sm-0">
+                                    <span>Claim Your Free Consultation</span>
+                                </a>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-img cover-background left-overlay-secondary" data-overlay-dark="7" data-background="img/banner/slide-07.jpg">
+                    <div class="container d-flex flex-column">
+                        <div class="row align-items-center min-vh-100 pt-6 pt-md-0">
+                            <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6 mb-1-9 mb-lg-0 pt-6 pb-12 py-sm-6">
+                                <span class="text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block text-primary small-title bg-white w-50 px-2">Crafting Digital Experiences</span>
+                                <h2 class="text-balck mb-2-2 display-3 font-weight-800 title lh-1 bg-white p-2 w-100">Best design for your digital <span class="text-primary">products.</span></h2>
+                                <a href="https://wa.me/919718820229" target="_blank" class="btn-style1 rounded me-2 my-1 my-sm-0">
+                                    <span>Claim Your Free Consultation</span>
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+                <div class="item bg-img cover-background left-overlay-secondary" data-overlay-dark="7" data-background="img/banner/slide-08.jpg">
+                    <div class="container d-flex flex-column">
+                        <div class="row align-items-center min-vh-100 pt-6 pt-md-0">
+                            <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6 mb-1-9 mb-lg-0 pt-6 pb-12 py-sm-6">
+                                <span class="text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block text-primary small-title bg-white w-50 px-2">Crafting Digital Experiences</span>
+                                <h2 class="text-black mb-2-2 display-3 font-weight-800 title lh-1 bg-white p-2 w-100">Unlock the power of digital <span class="text-primary">creativity.</span></h2>
+                                <a href="https://wa.me/919718820229" target="_blank" class="btn-style1 rounded shadow-none me-2 my-1 my-sm-0">
+                                    <span>Claim Your Free Consultation</span>
+                                </a>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US
+        ================================================== -->
+        <section>
+            <div class="container mt-lg-3 mt-xl-0">
+                <div class="row">
+                    <div class="col-lg-6 mb-2-9 mb-lg-0 position-relative">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="image-hover">
+                                    <img src="img/content/about-16.jpg" class="rounded" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-6 mt-1-9">
+                                <div class="image-hover">
+                                    <img src="img/content/about-17.jpg" class="rounded" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute p-3 p-sm-4 bg-primary rounded-circle start-50 top-50 translate-middle">
+                            <img src="img/icons/icon-53.png" alt="..." class="w-50px">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-column">
+                        <div class="ps-xl-2-9">
+                            <div class="wow fadeInUp" data-wow-delay="100ms">
+                                <span class="text-uppercase letter-spacing-2 font-weight-700 small mb-2 d-block">About Us</span>
+                                <h2 class="display-5 font-weight-600 lh-1 ls-minus-2px mb-4">Your trusted partners in creative web <span class="text-primary"> solutions</span></h2>
+                            </div>
+                            <p style="font-size: 18px;" class="mb-2-0 lead text-dark font-weight-600 wow fadeInUp " data-wow-delay="200ms">In today’s fast-changing digital world, every business — from startups to enterprises — needs smart, reliable, and personalized support to stand out. That’s where Techify comes in.
+                                <br><b class="font-weight-800">We specialize in delivering affordable, customized, and growth-focused digital solutions that empower businesses to compete and thrive.</b>
+                            </p>
+                            <div class="mb-5">
+                                <div class="d-flex border-bottom pb-1-9 mb-1-9 wow fadeInUp" data-wow-delay="300ms">
+                                    <div class="flex-shrink-0 me-4">
+                                        <img src="img/icons/icon-54.png" alt="..." class="w-50px">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h4 class="h5">Creative Approach</h4>
+                                        <p class="mb-0">We provide innovative, tailor-made strategies designed for your unique business journey — no “one-size-fits-all.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="flex-shrink-0 me-4">
+                                        <img src="img/icons/icon-55.png" alt="..." class="w-50px">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h4 class="h5">Successful Projects</h4>
+                                        <p class="mb-0">From startups to growing enterprises, we’ve helped businesses achieve measurable results — more visibility, more customers, stronger engagement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center wow fadeInUp" data-wow-delay="200ms">
+                                <div class="flex-shrink-0">
+                                    <a class="btn-style1 text-white-hover" href="https://wa.me/919718820229">Claim Your Free Consultation</a>
+                                </div>
+                                <div class="flex-grow-1 ms-3 ms-xl-5">
+                                    <!-- <img src="img/content/signature.png" alt="..."> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS
+        ================================================== -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="text-center mb-5 w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeInUp" data-wow-delay="200ms">
+                    <span class="text-uppercase letter-spacing-2 font-weight-700 small mb-2 d-block">Work Process</span>
+                    <h2 class="display-5 font-weight-800 lh-1 ls-minus-2px mb-0">Working <span class="text-primary">Process</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 mb-2-5 mb-lg-0 wow fadeInRight" data-wow-delay="200ms">
+                        <div class="process-style-04">
+                            <div class="icon-holder">
+                                <img src="img/icons/icon-56.png" alt="..." class="w-60px">
+                                <div class="count-box counted">
+                                    <h4 class="h6 mb-0">01</h4>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <span class="text-muted d-block mb-1">Discovery</span>
+                                <h4>Research & Strategy</h4>
+                                <p class="w-md-90 mx-auto mb-0">We begin by understanding your business goals, target audience, and challenges to create a roadmap for success.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mt-lg-2-9 mb-2-5 mb-lg-0 wow fadeInRight" data-wow-delay="300ms">
+                        <div class="process-style-04 arrow-top">
+                            <div class="icon-holder">
+                                <img src="img/icons/icon-57.png" alt="..." class="w-60px">
+                                <div class="count-box counted">
+                                    <h4 class="h6 mb-0">02</h4>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <span class="text-muted d-block mb-1">Planning</span>
+                                <h4>Creative Blueprint</h4>
+                                <p class="w-md-90 mx-auto mb-0">We design a clear strategy and project plan, ensuring every step is aligned with your vision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-2-5 mb-sm-0 wow fadeInRight" data-wow-delay="400ms">
+                        <div class="process-style-04">
+                            <div class="icon-holder">
+                                <img src="img/icons/icon-58.png" alt="..." class="w-60px">
+                                <div class="count-box counted">
+                                    <h4 class="h6 mb-0">03</h4>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <span class="text-muted d-block mb-1">Design & Development</span>
+                                <h4>Crafting the Experience</h4>
+                                <p class="w-md-90 mx-auto mb-0">From UI/UX design to robust development, we build digital solutions that are both beautiful and functional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mt-lg-2-9 wow fadeInRight" data-wow-delay="500ms">
+                        <div class="process-style-04 last">
+                            <div class="icon-holder">
+                                <img src="img/icons/icon-59.png" alt="..." class="w-60px">
+                                <div class="count-box counted">
+                                    <h4 class="h6 mb-0">04</h4>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <span class="text-muted d-block mb-1">Launch & Growth</span>
+                                <h4>Final Delivery & Beyond</h4>
+                                <p class="w-md-90 mx-auto mb-0">We deploy your project with precision and provide ongoing support to ensure lasting growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO
+        ================================================== -->
+        <section>
+            <div class="container">
+                <div class="text-center mb-5 w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeInUp" data-wow-delay="200ms">
+                    <span class="text-uppercase letter-spacing-2 font-weight-700 small mb-2 d-block">Our Portfolio</span>
+                    <h2 class="display-5 font-weight-800 lh-1 ls-minus-2px mb-0">Explore <span class="text-primary">Projects</span></h2>
+                </div>
+                <div class="row portfolio-gallery mt-n1-9">
+                    <div class="col-md-6 col-lg-4 mt-1-9" data-src="img/portfolio/portfolio-13.jpg" data-sub-html="<h4 class='text-white'><a href='#' class='text-white'>Tech Website Solution</a></h4>">
+                        <div class="portfolio-style3">
+                            <img class="border-radius-5" src="img/portfolio/portfolio-13.jpg" alt="...">
+                            <div class="portfolio-content">
+                                <div class="portfolio-inner-content">
+                                    <a href="#"><h4>Tech Website Solution</h4></a>
+                                    <span class="text-muted font-weight-500">Technology</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-buttons">
+                                <a class="portfolio-link" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-1-9" data-src="img/portfolio/portfolio-14.jpg" data-sub-html="<h4 class='text-white'><a href='#' class='text-white'>App Platform Integration</a></h4>">
+                        <div class="portfolio-style3">
+                            <img class="border-radius-5" src="img/portfolio/portfolio-14.jpg" alt="...">
+                            <div class="portfolio-content">
+                                <div class="portfolio-inner-content">
+                                    <a href="#"><h4>App Platform Integration</h4></a>
+                                    <span class="text-muted font-weight-500">Application</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-buttons">
+                                <a class="portfolio-link" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-1-9" data-src="img/portfolio/portfolio-15.jpg" data-sub-html="<h4 class='text-white'><a href='#' class='text-white'>Software Development</a></h4>">
+                        <div class="portfolio-style3">
+                            <img class="border-radius-5" src="img/portfolio/portfolio-15.jpg" alt="...">
+                            <div class="portfolio-content">
+                                <div class="portfolio-inner-content">
+                                    <a href="#"><h4>Software Development</h4></a>
+                                    <span class="text-muted font-weight-500">Software</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-buttons">
+                                <a class="portfolio-link" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-1-9" data-src="img/portfolio/portfolio-16.jpg" data-sub-html="<h4 class='text-white'><a href='#' class='text-white'>Website Design</a></h4>">
+                        <div class="portfolio-style3">
+                            <img class="border-radius-5" src="img/portfolio/portfolio-16.jpg" alt="...">
+                            <div class="portfolio-content">
+                                <div class="portfolio-inner-content">
+                                    <a href="#"><h4>Website Design</h4></a>
+                                    <span class="text-muted font-weight-500">Web Design</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-buttons">
+                                <a class="portfolio-link" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-1-9" data-src="img/portfolio/portfolio-17.jpg" data-sub-html="<h4 class='text-white'><a href='#' class='text-white'>Web Development</a></h4>">
+                        <div class="portfolio-style3">
+                            <img class="border-radius-5" src="img/portfolio/portfolio-17.jpg" alt="...">
+                            <div class="portfolio-content">
+                                <div class="portfolio-inner-content">
+                                    <a href="#"><h4>Web Development</h4></a>
+                                    <span class="text-muted font-weight-500">Development</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-buttons">
+                                <a class="portfolio-link" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-1-9" data-src="img/portfolio/portfolio-18.jpg" data-sub-html="<h4 class='text-white'><a href='#' class='text-white'>Smart Branding</a></h4>">
+                        <div class="portfolio-style3">
+                            <img class="border-radius-5" src="img/portfolio/portfolio-18.jpg" alt="...">
+                            <div class="portfolio-content">
+                                <div class="portfolio-inner-content">
+                                    <a href="#"><h4>Smart Branding</h4></a>
+                                    <span class="text-muted font-weight-500">Branding</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-buttons">
+                                <a class="portfolio-link" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXTRA
+        ================================================== -->
+        <section class="bg-secondary py-4">
+            <div class="position-relative z-index-2">
+                <div class="scrolling-text scrolling-left-text">
+                    <div class="scrolling-marquee">
+                        <h4 class="ms-2 display-1 font-weight-800"> Design & Branding — Web Development — Product Design — </h4>
+                        <h4 class="ms-2 display-1 font-weight-800 ms-2"> Mobile Application — Web Application — SEO Optimization - </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ
+        ================================================== -->
+        <section>
+            <div class="container">
+                <div class="row mt-n1-9">
+                    <div class="col-lg-6 order-2 mt-1-9 order-lg-1">
+                        <div id="accordion" class="accordion-style">
+                            <div class="card mb-4 wow fadeInUp" data-wow-delay="200ms">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link " data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Why is Techyfe the best choice for businesses?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                      At Techyfe, we combine creativity, technology, and strategy to deliver digital solutions that actually drive growth. We focus on three things: affordability, measurable results, and tailored strategies—ensuring our clients get the best value without compromising quality.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What services do you provide?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        We offer end-to-end digital services including:
+                                        <ul>
+                                            <li>Website Design & Development</li>
+                                            <li>Digital Marketing (SEO, Social Media, Ads)</li>
+                                            <li> Branding & Creative Solutions</li>
+                                            <li>E-commerce Development</li>
+                                            <li>Custom IT Solutions</li>
+                                            <li>SEO Optimization</li>
+                                        </ul>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Do you work with startups as well as established businesses?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        Yes! Whether you’re a startup looking to build your first online presence or an established company aiming to scale, we design solutions to match your stage and goals.
+                                    </div>
+                                </div>
+                            </div><div class="card mb-4 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How do you ensure project success?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        We follow a clear process—Discovery, Planning, Design & Development, and Launch & Growth. This ensures projects are delivered on time, meet your goals, and exceed expectations.
+                                    </div>
+                                </div>
+                            </div><div class="card mb-4 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Do you provide ongoing support after project delivery?</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                       Absolutely! We don’t just deliver and disappear. Techyfe offers post-launch support, updates, and growth-focused strategies to help your business stay ahead in the digital world.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-0 wow fadeInUp" data-wow-delay="500ms">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How affordable are your services? </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                      We believe premium services shouldn’t come at premium costs. Our pricing is transparent, flexible, and tailored to your project’s requirements—so you only pay for what you actually need.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-1-9 order-1 order-lg-2">
+                        <div class="ps-lg-4 ps-xl-6">
+                            <div class="wow fadeInUp" data-wow-delay="100ms">
+                                <span class="text-uppercase letter-spacing-2 font-weight-700 small mb-2 d-block">FAQ</span>
+                                <h2 class="display-5 font-weight-800 lh-1 ls-minus-2px mb-4">Frequently asked <span class="text-primary">questions</span></h2>
+                            </div>                            
+                            <div class="row mt-n1-9 mb-1-9">
+                                <div class="col-6 mt-1-9">
+                                    <div class="image-hover">
+                                        <img src="img/content/faq1.jpg" class="rounded" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-1-9">
+                                    <div class="image-hover">
+                                        <img src="img/content/faq2.jpg" class="rounded" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="mb-4">Web design agency there are a lot of things you need to know about your agency's website. It will help them find web designers, build their landing pages and attract new customers without doing any code!</p>
+                                <div class="progress-text">
+                                    <div class="row small mb-1">
+                                        <div class="col-6">Website Designing</div>
+                                        <div class="col-6 text-end">77%</div>
+                                    </div>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width:77%" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS
+        ================================================== -->
+        <section class="pb-0 overflow-visible bg-light">
+            <div class="container">
+                <div class="text-center mb-5 w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeInUp" data-wow-delay="200ms">
+                    <span class="text-uppercase letter-spacing-2 font-weight-700 small mb-2 d-block">Testimonials</span>
+                    <h2 class="display-5 font-weight-800 lh-1 ls-minus-2px mb-0">Clients <span class="text-primary">Feedback</span></h2>
+                </div>
+                <div class="bg-secondary cover-background py-5 py-lg-8 px-4 rounded testimonial-block">
+                    <div class="testimonial-carousel5 owl-carousel owl-theme mt-2">
+                        <div class="testmonial-single text-center">
+                            <img  src="./img/portfolio/avtar.png"  alt="..." class="rounded-circle">
+                            <span class="h1 align-top d-block my-4"></span>
+                            <p class="lead mb-4 w-lg-85 w-xl-70 mx-auto text-white">Techyfe created a website that beautifully captures the essence of Navyug Restaurant. The design is elegant, user-friendly, and helps us connect better with our customers. We couldn’t have asked for a better digital partner</p>
+                            <h6 class="letter-spacing-1 text-primary">Navyug Restaurant</h6>
+                            <span class="mb-0 text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block text-white">Mr. Rajat Sharma <br>Owner,Navyug Restaurant</span>
+                        </div>
+                        <div class="testmonial-single text-center">
+                            <img src="./img/portfolio/avtar-2.png" alt="..." class="rounded-circle">
+                            <span class="h1 align-top d-block my-4"></span>
+                            <p class="lead mb-4 w-lg-85 w-xl-70 mx-auto text-white">Techyfe delivered exactly what we needed — a modern website and real digital growth. Their team is professional, creative, and always supportive. We truly value their partnership</p>
+                            <h6 class="letter-spacing-1 text-primary">Aaoji Khhaoji</h6>
+                            <span class="mb-0 text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block text-white">Sardar Gurpreet Singh <br>Owner, Aaoji Khaoji</span>
+                        </div>
+
+                        
+                        <div class="testmonial-single text-center">
+                            <img src="./img/portfolio/avtar-3.png" alt="..." class="rounded-circle">
+                            <span class="h1 align-top d-block my-4"></span>
+                            <p class="lead mb-4 w-lg-85 w-xl-70 mx-auto text-white">Techyfe transformed our online presence with their innovative web solutions. Their team is highly professional, quick to respond, and truly understands client needs. Working with them has been a smooth and rewarding experience.</p>
+                            <h6 class="letter-spacing-1 text-primary">Brewnest Cafe</h6>
+                            <span class="mb-0 text-uppercase letter-spacing-1 font-weight-700 small mb-3 d-block text-white">Ms. Anaya Verma <br>Founder, Brewnest Cafe</span>
+                        </div>
+
+                        <div class="testmonial-single text-center">
+                            <img src="./img/portfolio/avtar-4.png" alt="..." class="rounded-circle">
+                            <span class="h1 align-top d-block my-4"></span>
+                            <p class="lead mb-4 w-lg-85 w-xl-70 mx-auto text-white">Working with Techyfe has been a game-changer for Viby Vibes. They built us a stylish, fast, and user-friendly website that perfectly matches our brand’s energy. Truly reliable and creative team!</p>
+                            <h6 class="letter-spacing-1 text-primary">Viby Vibes</h6>
+                            <span class="mb-0 text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block text-white">Bhrampal <br>Owner, Vibe  Vibes</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block p-3 bg-primary rounded-circle position-absolute right-10 top-10 ani-move d-md-block d-none"></div>
+        </section>
+
+        <!-- COUNTER
+        ================================================== -->
+        <section class="bg-primary pb-8">
+            <div class="container pt-6 pt-lg-4 pt-xl-0">
+                <div class="row mt-n5 text-center">
+                    <div class="col-sm-6 col-lg-3 mt-5">
+                        <h3 class="display-14 display-sm-12 text-white font-weight-700"><span class="countup">600</span>+</h3>
+                        <div class="separator-line-horrizontal-medium-light3 bg-white my-4 opacity5 mx-auto"></div>
+                        <p class="text-white h5 mb-0">Project Completed</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mt-5">
+                        <h3 class="display-14 display-sm-12 text-white font-weight-700"><span class="countup">450</span>+</h3>
+                        <div class="separator-line-horrizontal-medium-light3 bg-white my-4 opacity5 mx-auto"></div>
+                        <p class="text-white h5 mb-0">Satisfied Customers</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mt-5">
+                        <h3 class="display-14 display-sm-12 text-white font-weight-700"><span class="countup">4</span>+</h3>
+                        <div class="separator-line-horrizontal-medium-light3 bg-white my-4 opacity5 mx-auto"></div>
+                        <p class="text-white h5 mb-0">Years Experiences</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mt-5">
+                        <h3 class="display-14 display-sm-12 text-white font-weight-700"><span class="countup">10</span>+</h3>
+                        <div class="separator-line-horrizontal-medium-light3 bg-white my-4 opacity5 mx-auto"></div>
+                        <p class="text-white h5 mb-0">Team Members</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block p-3 bg-white rounded-circle position-absolute left-10 bottom-20 ani-move d-md-block d-none"></div>
+        </section>
+
+        <!-- BLOG
+        ================================================== -->
+        <section>
+            <div class="container">
+                <div class="text-center mb-5 w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeInUp" data-wow-delay="200ms">
+                    <span class="text-uppercase letter-spacing-2 font-weight-700 small mb-2 d-block">Our Blog</span>
+                    <h2 class="display-5 font-weight-800 lh-1 ls-minus-2px mb-0">Latest <span class="text-primary">Updates</span></h2>
+                </div>
+                <div class="row g-xl-5 mt-n1-9">
+
+                    <div class="col-md-6 col-lg-4 mt-1-9 wow fadeInUp" data-wow-delay="200ms">
+                        <article class="card card-style-13 border-0 primary-shadow rounded h-100">
+                            <div class="card-image">
+                                <img src="img/blog/blog-01.jpg" class="rounded-top" alt="...">
+                            </div>
+                            <div class="card-body p-1-6 p-sm-1-9 pt-2-3">
+                                <span class="card-icon font-weight-700 z-index-2">08 May</span>
+                                <div class="mb-3">
+                                    <span class="text-capitalize"><i class="far fa-user text-primary"></i> <a href="#">admin</a></span> <span class=" ms-3 d-inline-block"><i class="fa-solid fa-tags text-primary"></i> <a href="#">Digital</a></span>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="blog-details.html">The reasons why we love web design agency.</a></h3>
+                                <a href="blog-details.html" class="read-more">Read more <i class="fas fa-arrow-right align-middle ms-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mt-1-9 wow fadeInUp" data-wow-delay="400ms">
+                        <article class="card card-style-13 border-0 primary-shadow rounded h-100">
+                            <div class="card-image">
+                                <img src="img/blog/blog-02.jpg" class="rounded-top" alt="...">
+                            </div>
+                            <div class="card-body p-1-6 p-sm-1-9 pt-2-3">
+                                <span class="card-icon font-weight-700 z-index-2">04 May</span>
+                                <div class="mb-3">
+                                    <span class="text-capitalize"><i class="far fa-user text-primary"></i> <a href="#">admin</a></span> <span class=" ms-3 d-inline-block"><i class="fa-solid fa-tags text-primary"></i> <a href="#">Consulting</a></span>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="blog-details.html">How to own web design agency for free.</a></h3>
+                                <a href="blog-details.html" class="read-more">Read more <i class="fas fa-arrow-right align-middle ms-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mt-1-9 wow fadeInUp" data-wow-delay="600ms">
+                        <article class="card card-style-13 border-0 primary-shadow rounded h-100">
+                            <div class="card-image">
+                                <img src="img/blog/blog-03.jpg" class="rounded-top" alt="...">
+                            </div>
+                            <div class="card-body p-1-6 p-sm-1-9 pt-2-3">
+                                <span class="card-icon font-weight-700 z-index-2">01 May</span>
+                                <div class="mb-3">
+                                    <span class="text-capitalize"><i class="far fa-user text-primary"></i> <a href="#">admin</a></span> <span class=" ms-3 d-inline-block"><i class="fa-solid fa-tags text-primary"></i> <a href="#">Agency</a></span>
+                                </div>
+                                <h3 class="h4 mb-3"><a href="blog-details.html">Five latest developments in web agency.</a></h3>
+                                <a href="blog-details.html" class="read-more">Read more <i class="fas fa-arrow-right align-middle ms-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER
+        ================================================== -->
+        <footer class="footer-style2 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-1-9 mb-lg-0">
+                        <div class="footer-logo">
+                            <a href="index-2.html">
+                                <img src="img/logos/logo.png" class="mb-4" alt="..." />
+                            </a>
+                        </div>
+                        <p class="mb-1-9 text-white w-xxl-85">We have been most trusted web design agency since 4+ years.</p>
+                        <!-- <div class="social-icons2">
+                            <ul class="ps-0 mb-0">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-12 mb-1-9 pb-4 border-bottom border-color-light-white">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="ti-mobile display-20 text-primary"></i>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3" >
+                                                <a href="https://wa.me/919718820229" target="_blank"><h4 class="h5 text-white mb-1">Phone</h4>
+                                                <p class="mb-0 text-white opacity8 small">+91 97188 20229</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="ti-email display-20 text-primary"></i>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h4 class="h5 text-white mb-1">Email</h4>
+                                                <a href="mailto:info.techyfe@gmail.com"></a><p class="mb-0 text-white opacity8 small">info.techyfe@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="ti-map-alt display-20 text-primary"></i>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h4 class="h5 text-white mb-1">Location</h4>
+                                                <p class="mb-0 text-white opacity8 small">Noida Sector 22 <br> Noida-201301, India</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-1-9 mb-lg-0">
+                                <h3>Pages</h3>
+                                <ul class="ps-0 mb-0">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./services.html">Services</a></li>
+                                    <li><a href="./portfolio.html">Portfolio</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-1-9 mb-lg-0">
+                                <h3>Services</h3>
+                                <ul class="ps-0 mb-0">
+                                    <li><a href="#">Website Design & Development</a></li>
+                                    <li><a href="#">Digital Marketing & Growth</a></li>
+                                    <li><a href="#">Creative & Branding</a></li>
+                                    <li><a href="#">Content & Media Production</a></li>
+                                    <li><a href="#">Business Automation & AI Solutions</a></li>
+                                    <li><a href="#">SEO Optimization</a></li>
+                                </ul>
+                            </div>
+                            
+
+                            <div class="col-md-6 col-lg-4">
+                                <h3>Newsletter</h3>
+                                <form class="quform" action="#" method="post" enctype="multipart/form-data" onclick="">
+
+                                    <div class="quform-elements">
+
+                                        <div class="row">
+                                            <!-- Begin Text input element -->
+                                            <div class="col-md-12">
+                                                <div class="quform-element mb-0">
+                                                    <div class="quform-input">
+                                                        <input class="form-control" id="email_address" type="text" name="email_address" placeholder="Subscribe with us" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Text input element -->
+
+                                            <!-- Begin Submit button -->
+                                            <div class="col-md-12 mt-2">
+                                                <div class="quform-submit-inner">
+                                                    <button class="btn-style1 white-hover m-0 w-100 border-0" type="submit"><span>Subscribe</span></button>
+                                                </div>
+                                                <div class="quform-loading-wrap text-start mt-3"><span class="quform-loading"></span></div>
+                                            </div>
+                                            <!-- End Submit button -->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="container">
+                    <div class="row align-items-center">
+                        
+                        <!-- Left Side Copyright -->
+                        <div class="col-md-6 text-start">
+                            <p>
+                                &copy; <span class="current-year"></span> Techyfe. All rights reserved.
+                            </p>
+                        </div>
+
+                        <!-- Right Side Links -->
+                        <div class="col-md-6 text-end">
+                            <p>
+                                <a href="terms-and-conditions.html">Terms & Conditions</a> | 
+                                <a href="privacy-policy.html">Privacy Policy</a> | 
+                                <a href="security-policy.html">Security</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+
+    </div>
+
+
+       
+
+        
+
+    </div>
+
+    <!-- SCROLL TO TOP
+    ================================================== -->
+ 
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919718820229" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        </a>
+        </div>
+
+        <!-- CSS -->
+        <style>
+        .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        }
+
+        .whatsapp-float a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: white;
+        font-size: 30px;
+        border-radius: 50%;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        transition: 0.3s;
+        }
+
+        .whatsapp-float a:hover {
+        background-color: #20b954;
+        }
+        </style>
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- scroll -->
+    <script src="js/jquery.scrollbar.min.js"></script>
+
+    <!-- jquery -->
+    <script src="js/core.min.js"></script>
+
+    <!-- search -->
+    <script src="search/search.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- form plugins js -->
+    <script src="quform/js/plugins.js"></script>
+
+    <!-- form scripts js -->
+    <script src="quform/js/scripts.js"></script>
+
+    <!-- all js include end -->
+
+</body>
+
+</html>
